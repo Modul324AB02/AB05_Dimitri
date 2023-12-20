@@ -10,6 +10,11 @@ COPY package.json .
 # Installiere die Abhängigkeiten mit Yarn
 RUN yarn install
 
+RUN  yarn lint
+
+RUN yarn test
+
+RUN yarn build
 # Kopiere den Quellcode in den Container
 COPY . .
 
