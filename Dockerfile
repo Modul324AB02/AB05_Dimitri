@@ -10,7 +10,7 @@ COPY package.json .
 # Installiere die Abhängigkeiten mit Yarn
 RUN yarn install
 
-RUN  yarn lint
+RUN yarn lint
 
 RUN yarn test
 
