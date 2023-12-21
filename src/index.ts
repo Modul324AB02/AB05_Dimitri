@@ -18,7 +18,7 @@ server.listen(serverPort, () => {
   console.log(`Express Server started on port ${serverPort}`);
 });
 
-app.get('«/log/time', (req: Request, res: Response) => {
+app.get('/log/time', (req: Request, res: Response) => {
   const today = new Date();
   const hour = today.getHours();
   const minute = today.getMinutes();
