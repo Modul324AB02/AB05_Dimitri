@@ -17,3 +17,11 @@ server.listen(serverPort, () => {
   // eslint-disable-next-line no-console
   console.log(`Express Server started on port ${serverPort}`);
 });
+
+app.get('/log/time', (req: Request, res: Response) => {
+  const today = new Date();
+  const hour = today.getHours();
+  const minute = today.getMinutes();
+  const time = `${hour}:${minute}`;
+  console.log(`The time is ${time}`);
+});
